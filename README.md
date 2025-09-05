@@ -66,4 +66,7 @@ A arquitetura reage a eventos do S3, tornando-a eficiente para processar dados e
 * Flexibilidade:
 O Lambda permite que você escreva código para realizar diversas tarefas complexas em resposta ao upload de arquivos. 
 * Custo-efetividade:
-Paga-se apenas pelo tempo de computação utilizado pelo Lambda e pelo armazenamento no S3 e DynamoDB, sem custo por capacidade ociosa. 
+Paga-se apenas pelo tempo de computação utilizado pelo Lambda e pelo armazenamento no S3 e DynamoDB, sem custo por capacidade ociosa.
+---
+![Dessafio CodeGirl EC2](https://github.com/user-attachments/assets/bf7d5175-292c-4161-82ed-9b13e8315084)
+
