@@ -2,7 +2,7 @@
 > Consolidar seus conhecimentos em gerenciamento de instâncias EC2 na AWS
 ---
 
-![1codegirlEC2](https://github.com/user-attachments/assets/1c54e021-1bd8-4013-9543-6ab5027c1dd0)
+![3codegirlEC2](https://github.com/user-attachments/assets/31fac287-9c06-4db5-a960-8219cb5452a7)
 
 
 ### Uma arquitetura AWS onde um usuário envia o arquivo para o servidor EC2, que o processa localmente no volume EBS, salvando metadados no RDS. 
@@ -10,16 +10,16 @@
 1. Upload do Usuário:
 O usuário envia um arquivo através da interface web da sua aplicação.
 
-3. Recebimento pelo EC2:
+2. Recebimento pelo EC2:
 A instância EC2, que hospeda o servidor web/aplicação, recebe o arquivo do usuário.
 
-5. Processamento e Armazenamento:
-Armazenamento em EBS: O arquivo é salvo em um volume EBS anexado à instância EC2.
+3. Processamento e Armazenamento:
+O arquivo é salvo em um volume EBS anexado à instância EC2.
 
-7. Salvar Metadados no RDS:
-A aplicação salva informações sobre o arquivo no banco de dados RDS.
+4. Salvar Metadados no RDS:
+A aplicação salva informações/metadados sobre o arquivo no banco de dados RDS.
 
-9. Acesso e Visualização:
+Acesso e Visualização:
 Quando o usuário precisa acessar o arquivo, a aplicação busca os metadados do RDS, recupera o arquivo do EBS e o disponibiliza para download ou visualização.
 
 ***Componentes da Arquitetura***
