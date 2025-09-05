@@ -68,6 +68,7 @@ O Lambda permite que você escreva código para realizar diversas tarefas comple
 * Custo-efetividade:
 Paga-se apenas pelo tempo de computação utilizado pelo Lambda e pelo armazenamento no S3 e DynamoDB, sem custo por capacidade ociosa.
 ---
+> Diagrama da Arquitetura
 ![Dessafio CodeGirl EC2](https://github.com/user-attachments/assets/bf7d5175-292c-4161-82ed-9b13e8315084)
 
 # O diagrama de duas arquiteturas para o Desafio CodeGirl EC2, cada uma em uma Zona de Disponibilidade diferente. Ambas as arquiteturas utilizam uma VPC com um bloco de endereços IP 10.0.0.0/16.
