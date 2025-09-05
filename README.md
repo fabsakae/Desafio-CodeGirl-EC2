@@ -9,7 +9,7 @@ Consolidar seus conhecimentos em gerenciamento de instâncias EC2 na AWS
 ### Uma arquitetura AWS com o Amazon S3 como um serviço de armazenamento de arquivos onde o AWS Lambda é acionado por um evento do S3, como o upload de um novo arquivo. O Lambda, por sua vez, processa esse arquivo, extrai metadados e os grava em uma tabela do Amazon DynamoDB que é banco de dados NoSQL de alta performance, para persistência e consulta. 
 Como Funciona a arquitetura da atividade - Desafio de projeto:
 
-**1. Armazenamento de Arquivos (S3):
+**1. Armazenamento de Arquivos (S3):**
 Os objetos, como imagens ou documentos, são carregados para um bucket do Amazon S3. 
 
 2. Acionamento do Lambda (S3 -> Lambda):
@@ -17,9 +17,9 @@ Um evento de "upload de objeto" é gerado no bucket S3, configurado para acionar
 
 3. Processamento do Arquivo (Lambda):
 A função Lambda é executada e, dependendo da aplicação, pode realizar diversas tarefas:
-Extrair metadados: Obter informações relevantes do arquivo, como formato, tamanho ou conteúdo. 
-Transformação: Converter o arquivo para outro formato ou realizar validações. 
-Auditoria: Registrar detalhes sobre a operação de upload.
+* Extrair metadados: Obter informações relevantes do arquivo, como formato, tamanho ou conteúdo. 
+* Transformação: Converter o arquivo para outro formato ou realizar validações. 
+* Auditoria: Registrar detalhes sobre a operação de upload.
 
 4. Persistência de Dados (Lambda -> DynamoDB):
 Os metadados extraídos são, então, armazenados na tabela do Amazon DynamoDB.
