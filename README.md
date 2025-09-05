@@ -5,8 +5,11 @@ Consolidar seus conhecimentos em gerenciamento de instâncias EC2 na AWS
 ![desafioec2](https://github.com/user-attachments/assets/5c088f23-4378-4901-a5da-98da5ad7e9e4)
 
 ---
-![codegirlS3](https://github.com/user-attachments/assets/b27dc294-7335-4c65-b8e6-cd8468ea4a7f)
-### Uma arquitetura AWS com o Amazon S3 como um serviço de armazenamento de arquivos onde o AWS Lambda é acionado por um evento do S3, como o upload de um novo arquivo. O Lambda, por sua vez, processa esse arquivo, extrai metadados e os grava em uma tabela do Amazon DynamoDB que é banco de dados NoSQL de alta performance, para persistência e consulta. 
+![1codegirlS3](https://github.com/user-attachments/assets/0c87cf85-2e39-4453-93d7-e9459275f8f4)
+
+### Uma arquitetura AWS com o Amazon S3 como um serviço de armazenamento de arquivos onde o AWS Lambda é acionado por um evento do S3, como o upload de um novo arquivo. 
+O Lambda, por sua vez, processa esse arquivo, extrai metadados e os grava em uma tabela do Amazon DynamoDB que é banco de dados NoSQL de alta performance, para persistência e consulta. 
+
 ***Como Funciona a arquitetura da atividade - Desafio de projeto:***
 
 1. Armazenamento de Arquivos (S3):
