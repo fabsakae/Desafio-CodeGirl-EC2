@@ -1,5 +1,6 @@
 # Desafio-CodeGirl-EC2
 > Consolidar seus conhecimentos em gerenciamento de instâncias EC2 na AWS
+
 ---
 
 ![3codegirlEC2](https://github.com/user-attachments/assets/31fac287-9c06-4db5-a960-8219cb5452a7)
@@ -28,7 +29,8 @@ Quando o usuário precisa acessar o arquivo, a aplicação busca os metadados do
  
 * Amazon EBS:Volumes de armazenamento em nível de bloco que funcionam como disco rígido para suas instâncias EC2. Armazena os dados que precisam de acesso persistente, como logs da aplicação, arquivos de configuração ou, em alguns casos, arquivos temporários do upload, garantindo que os dados não se percam quando a instância EC2 for reiniciada.
 
-* Amazon RDS (Relational Database Service): Serviço de banco de dados relacional gerenciado. Fácil de configurar, operar e escalar bancos de dados como MySQL, PostgreSQL, etc. Armazena os dados estruturados do seu aplicativo, como informações sobre os usuários, o conteúdo dos arquivos enviados (metadados) e a relação entre eles. 
+* Amazon RDS (Relational Database Service): Serviço de banco de dados relacional gerenciado. Fácil de configurar, operar e escalar bancos de dados como MySQL, PostgreSQL, etc. Armazena os dados estruturados do seu aplicativo, como informações sobre os usuários, o conteúdo dos arquivos enviados (metadados) e a relação entre eles.
+  
 ---
 
 ![2codegirlS3](https://github.com/user-attachments/assets/efbe28f9-27e6-45d9-b343-b60305d46d89)
