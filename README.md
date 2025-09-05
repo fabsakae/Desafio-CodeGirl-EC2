@@ -14,7 +14,7 @@ O usuário envia um arquivo através da interface web da sua aplicação.
 A instância EC2, que hospeda o servidor web/aplicação, recebe o arquivo do usuário.
 
 5. Processamento e Armazenamento:
-Armazenamento em EBS (Alternativa): O arquivo é salvo em um volume EBS anexado à instância EC2.
+Armazenamento em EBS: O arquivo é salvo em um volume EBS anexado à instância EC2.
 
 7. Salvar Metadados no RDS:
 A aplicação salva informações sobre o arquivo no banco de dados RDS.
