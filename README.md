@@ -2,9 +2,35 @@
 > Consolidar seus conhecimentos em gerenciamento de instâncias EC2 na AWS
 ---
 
-![desafioec2](https://github.com/user-attachments/assets/5c088f23-4378-4901-a5da-98da5ad7e9e4)
+![1codegirlEC2](https://github.com/user-attachments/assets/1c54e021-1bd8-4013-9543-6ab5027c1dd0)
 
+
+### Uma arquitetura AWS onde um usuário envia o arquivo para o servidor EC2, que o processa localmente no volume EBS, salvando metadados no RDS. 
+***Fluxo do Envio de Arquivos***
+1. Upload do Usuário:
+O usuário envia um arquivo através da interface web da sua aplicação.
+
+3. Recebimento pelo EC2:
+A instância EC2, que hospeda o servidor web/aplicação, recebe o arquivo do usuário.
+
+5. Processamento e Armazenamento:
+Armazenamento em EBS (Alternativa): O arquivo é salvo em um volume EBS anexado à instância EC2.
+
+7. Salvar Metadados no RDS:
+A aplicação salva informações sobre o arquivo no banco de dados RDS.
+
+9. Acesso e Visualização:
+Quando o usuário precisa acessar o arquivo, a aplicação busca os metadados do RDS, recupera o arquivo do EBS e o disponibiliza para download ou visualização.
+
+***Componentes da Arquitetura***
+
+* Amazon EC2: Uma máquina virtual na nuvem que executa o aplicativo. O servidor web (ou aplicação) roda aqui.
+ 
+* Amazon EBS:Volumes de armazenamento em nível de bloco que funcionam como disco rígido para suas instâncias EC2. Armazena os dados que precisam de acesso persistente, como logs da aplicação, arquivos de configuração ou, em alguns casos, arquivos temporários do upload, garantindo que os dados não se percam quando a instância EC2 for reiniciada.
+
+* Amazon RDS (Relational Database Service): Serviço de banco de dados relacional gerenciado. Fácil de configurar, operar e escalar bancos de dados como MySQL, PostgreSQL, etc. Armazena os dados estruturados do seu aplicativo, como informações sobre os usuários, o conteúdo dos arquivos enviados (metadados) e a relação entre eles. 
 ---
+
 ![2codegirlS3](https://github.com/user-attachments/assets/efbe28f9-27e6-45d9-b343-b60305d46d89)
 
 
