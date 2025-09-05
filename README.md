@@ -70,3 +70,23 @@ Paga-se apenas pelo tempo de computação utilizado pelo Lambda e pelo armazenam
 ---
 ![Dessafio CodeGirl EC2](https://github.com/user-attachments/assets/bf7d5175-292c-4161-82ed-9b13e8315084)
 
+# O diagrama de duas arquiteturas para o Desafio CodeGirl EC2, cada uma em uma Zona de Disponibilidade diferente. Ambas as arquiteturas utilizam uma VPC com um bloco de endereços IP 10.0.0.0/16.
+
+## Zona de Disponibilidade A:
+
+* EC2 A1 Instance: Essa instância está na sub-rede privada para segurança.
+
+* Amazon RDS: Está na sub-rede privada para evitar acesso direto da internet e aumentar a segurança. A instância EC2 pode acessar e se comunicar com o banco de dados.
+
+* EBS: É um volume de armazenamento em bloco que é obrigatoriamente anexado a uma instância EC2. Estão conectados na mesma sub-rede privada.
+
+## Zona de Disponibilidade B:
+***É um exemplo de uma arquitetura "serverless" ou orientada a eventos***
+* EC2 A1 Instance: A instância está na sub-rede privada.
+
+* Amazon S3 (Simple Storage Service): Mostra a comunicação entre a instância EC2 e o S3. O S3 é um serviço de armazenamento de objetos que é global e não está vinculado a uma VPC ou sub-rede específica, mas sim acessado por meio de endpoints.
+
+* AWS Lambda: O Lambda é um serviço de computação serverless. A sua conexão com o S3 e o DynamoDB indica que o S3 pode acionar uma função Lambda, que por sua vez pode interagir com o DynamoDB.
+
+* Amazon DynamoDB: É um banco de dados NoSQL totalmente gerenciado. É acessado através de endpoints.
+***Aqui representa um fluxo onde o upload de um objeto para o S3 pode disparar (trigger) uma função Lambda, que por sua vez pode ler ou escrever dados no banco de dados NoSQL DynamoDB.***
